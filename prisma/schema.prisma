@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+  packageManager = "npm"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://devstar:pZ8w9j1!2@ls-141ff2a6703085fbd1b645a016f671471e83ed44.c4132jfwzbkh.ap-south-1.rds.amazonaws.com:3306/devstar"
+}
+
+model WebhookService {
+  id  Int @id @default(autoincrement())
+  url String
+  value String
+}
